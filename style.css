@@ -1,0 +1,162 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Alkatra:wght@600&family=Dancing+Script:wght@600&family=Lobster&family=Playfair+Display:wght@600&display=swap');
+
+
+* {
+	box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    color: black;
+    margin: 0;
+    padding: 0;
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 1000,
+  'GRAD' 2,
+  'opsz' 50
+}
+
+header {
+     background: linear-gradient(132deg, rgb(34, 181, 254) 0.00%, rgb(255, 186, 214) 100.00%);
+	color: #fff;
+	padding: 20px;
+	text-align: center;
+     font-family: 'Poppins', sans-serif;
+
+}
+header h1{
+
+color: white;
+font-family: 'Poppins', sans-serif,cursive;
+
+}
+
+main {
+	padding: 20px;
+}
+
+h2 {
+    
+	margin-bottom: 3rem;
+     font-family: 'Alkatra', cursive;
+     color: linear-gradient(#553c9a, #ee4b2b, #00c2cb, #553c9a);
+}
+
+
+  
+ul {
+	list-style: none;
+	margin-bottom: 20px;
+	padding: 0;
+}
+
+li {
+	align-items: center;
+	display: flex;
+	margin-bottom: 10px;
+}
+
+
+
+li img {
+	height: 13rem;
+    width: 17rem;
+     margin-right: 20px;
+     }
+     
+     li div {
+     flex: 1;
+     }
+     
+     button {
+     background-color: #007bff;
+     margin-left: 2.7rem;
+     border: none;
+     border-radius: 5px;
+     color: #fff;
+     cursor: pointer;
+     font-size: 16px;
+     padding: 10px 20px;
+     }
+     
+     .checkout label {
+     display: block;
+     margin-bottom: 5px;
+     }
+     
+     .checkout input[type="text"] {
+     transition:(all 0.40s ease-in-out);
+     border: 1px solid #ddd;
+     border-radius: 5px;
+     outline: none;
+     font-size: 16px;
+     margin-bottom: 10px;
+     padding: 10px;
+     width: 100%;
+     }
+
+     .checkout input[type="text"]:focus {
+          box-shadow: 1px 1px 6px 1px #1183d6;
+          border-color: #0b8deb;
+          outline: double blue 1px;
+          caret-color:rgb(35, 229, 21);
+        }
+
+
+
+     
+     .checkout select {
+     border: 1px solid #ddd;
+     border-radius: 5px;
+     font-size: 16px;
+     margin-bottom: 10px;
+     padding: 10px;
+     width: 100%;
+     }
+     
+     .checkout button[type="submit"] {
+     background-color: #007bff;
+     border: none;
+     border-radius: 5px;
+     color: #fff;
+     cursor: pointer;
+     font-size: 16px;
+     font-family: 'Poppins', sans-serif;
+     padding: 10px 20px;
+     }
+     
+     .hidden {
+     display: none;
+     margin-top: 2rem;
+     
+     }
+     
+     .confirmation {
+     text-align: center;
+     }
+
+     .item-quantity {
+          width: 50px;
+          text-align: center;
+     }
+     
+     .delete-item {
+          background-color: #ff6161;
+          color: #fff;
+          border: none;
+          padding: 5px 10px;
+          border-radius: 3px;
+          cursor: pointer;
+          margin-top: 1rem;
+     }
+     #error-message {
+          color: #2735c9;
+          margin-top: 10px;
+          font-size: 20px;
+          font-weight: bold;
+          font-family: 'Poppins', sans-serif;
+     }
+

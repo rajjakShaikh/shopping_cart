@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Cart</title>
+		<link rel="stylesheet" href="style.css">
+          <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+	</head>
+	<body>
+		<header>
+			<h1>Shopping Cart</h1>
+		</header>
+		<main>
+			<h2 >Cart
+               <span class="material-symbols-outlined" style="font-size: 2rem;">
+                    shopping_cart
+                    </span>
+               </h2>
+               
+			<ul id="cart-items">
+                    <li data-index="0">
+                         <img src="https://th.bing.com/th/id/OIP.9tYU0glNGJhRXOkNhewS_QHaHa?pid=ImgDet&rs=1" alt="BBC micro:bit">
+                         <div>
+                              <h3 style="font-size: 1.8rem;">BBC micro:bit</h3>
+                              <p style="margin-top: 5px;">Quantity: <input type="number" class="item-quantity" value="1" data-index="0" min="1"></p>
+                              <p style="margin-top: 5px;">Price: $1500</p>
+                              <button class="delete-item" data-index="0">Delete</button>
+                         </div>
+                    </li>
+                    <li data-index="1">
+                         <img src="https://www.electromaker.io/uploads/images/blog/thumb/microbit.jpg"alt="Arduino Uno R3">
+                         <div>
+                              <h3  style="font-size: 1.8rem;">Arduino Uno R3</h3>
+                              <p>Quantity: <input type="number" class="item-quantity" value="1" data-index="1" min="1"></p>
+                              <p>Price: $600</p>
+                              <p >Price: $600</p>
+                              <button class="delete-item" data-index="1">Delete</button>
+                         </div>
+                    </li>
+               </ul>
+			<button id="checkout-btn">Proceed to Checkout</button>
+			<section class="checkout hidden">
+				<h2>Checkout</h2>
+				<form id="checkout-form">
+					<label for="shipping-address">Shipping Address:</label>
+					<select id="shipping-address">
+						<option value="address1">Street:  5-5-102/1, 1st Floor, Anasuya, Behind Ganji Enterprises, Ranigunj
+
+                                   City:   Hyderabad
+                                   
+                                   State/province/area:    Andhra Pradesh
+                                   
+                                   Phone number  04027702626
+                                   
+                                   Zip code  500003
+                                   
+                                   Country calling code  +91
+                                   
+                                   Country  India</option>
+						<option value="address2">Street:  105 Vardhaman Chambers, 17 C P Street
+
+                                   City:   Mumbai
+                                   
+                                   State/province/area:    Maharashtra
+                                   
+                                   Phone number  02222851289
+                                   
+                                   Zip code  400001
+                                   
+                                   Country calling code  +91
+                                   
+                                   Country  India</option>
+						<option value="address3">Street:  30, Dr.besant Road,ice House, Royapettah
+
+                                   City:   Chennai
+                                   
+                                   State/province/area:    Tamil Nadu
+                                   
+                                   Phone number  04428473198
+                                   
+                                   Zip code  600014
+                                   
+                                   Country calling code  +91
+                                   
+                                   Country  India</option>
+					</select>
+					<label for="card-number">Credit Card Number:</label>
+					<input type="text" id="card-number">
+					<label for="expiration-date">Expiration Date (MM/YY):</label>
+					<input type="text" id="expiration-date">
+					<label for="cvv">CVV:</label>
+					<input type="text" id="cvv">
+					<button type="submit" id="submit-btn">Submit</button>
+					<p id="error-message"></p>
+				</form>
+			</section>
+			<section class="checkout hidden">
+				<div class="checkout" style="display: none">
+                         <h2>Checkout</h2>
+                         <form id="checkout-form">
+                              <label for="card-number">Card Number</label>
+                              <input type="text" id="card-number" required>
+                    
+                              <label for="expiration-date">Expiration Date</label>
+                              <input type="text" id="expiration-date" required>
+                    
+                              <label for="cvv">CVV</label>
+                              <input type="text" id="cvv" required>
+                    
+                              <button type="submit">Submit Payment</button>
+                         </form>
+                         <div id="error-message"></div>
+                    </div>
+			</section>
+			<section class="confirmation hidden">
+				<h2>Thank You For Your Order</h2>
+				<p>Your order has been placed successfully. We will notify you once it has shipped.</p>
+			</section>
+		</main>
+		<script src="script.js"></script>
+	</body>
+</html>
